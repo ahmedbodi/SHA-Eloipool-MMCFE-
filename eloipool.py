@@ -36,7 +36,6 @@ if not hasattr(config, 'ShareTarget'):
 
 import logging
 import logging.handlers
-
 rootlogger = logging.getLogger(None)
 logformat = getattr(config, 'LogFormat', '%(asctime)s\t%(name)s\t%(levelname)s\t%(message)s')
 logformatter = logging.Formatter(logformat)
